@@ -1,0 +1,48 @@
+
+> library(readr)
+> iris_data <- read_csv("~/Downloads/iris.data.webarchive")
+Error in make.names(x) : invalid multibyte string 1
+> View(iris_data)
+Error in View : object 'iris_data' not found
+> library(readr)
+> bezdekIris_data <- read_csv("~/Downloads/bezdekIris.data.txt")
+Parsed with column specification:
+cols(
+  `5.1` = col_double(),
+  `3.5` = col_double(),
+  `1.4` = col_double(),
+  `0.2` = col_double(),
+  `Iris-setosa` = col_character()
+)
+> View(bezdekIris_data)
+> P-value< 0.05
+Error: object 'P' not found
+> P < 0.05
+Error: object 'P' not found
+> ?iris
+> plot(iris, col=iris$Species)
+> legend(7,4.3,unique(iris$Species),col=1:length(iris$Species),p ch=1)
+Error: unexpected symbol in "legend(7,4.3,unique(iris$Species),col=1:length(iris$Species),p ch"
+> legend(7,4.3,unique(iris$Species),col=1:length(iris$Species),p ch=1)
+Error: unexpected symbol in "legend(7,4.3,unique(iris$Species),col=1:length(iris$Species),p ch"
+> legend(7,4.3,unique(iris$Species),col=1:length(iris$Species),pch=1)
+> par(mfrow=c(1,2))
+> plot(iris$Petal.Length)
+> boxplot(iris$Petal.Length~iris$Species)
+> par(mfrow=c(2,2))
+> for(i in 1:4)boxplot(iris[,i]~Species,data=iris,main=names(iris)[i])
+> echo "# iris" >> README.md
+Error: unexpected string constant in "echo "# iris""
+> git init
+Error: unexpected symbol in "git init"
+> git add README.md
+Error: unexpected symbol in "git add"
+> git commit -m "first commit"
+Error: unexpected symbol in "git commit"
+> git remote add origin https://github.com/Bethanygrace29/iris.git
+Error: unexpected symbol in "git remote"
+> git push -u origin master
+Error: unexpected symbol in "git push"
+> echo "# iris" >> README.md
+Error: unexpected string constant in "echo "# iris""
+> 
